@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #gameover {
+            position: absolute;
+            width: 410px;
+            height: 510px;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            text-align: center;
+        }
+
+        #playAgain {
+            position: absolute;
+            top: 310px;
+            left: 130px;
+            cursor: pointer;
+            font-size: 2em;
+            color: #FFF;
+            text-align: center;
+        }
+
+        #yourPoint {
+            position: absolute;
+            top: 170px;
+            left: 175px;
+            font-size: 5em;
+            color: darkgoldenrod;
+            text-align: center;
+        }
+
+        #text {
+            position: absolute;
+            top: 160px;
+            left: 130px;
+            font-size: 2em;
+            color: darkgoldenrod;
+            text-align: center;
+        }
+
+        #bodyPages {
+            background: url("./asset/bgfix.jpg");
+            background-size: 96%;
+        }
+
+        #games {
+            position: absolute;
+            top: 200px;
+            left: 720px;
+        }
+    </style>
+</head>
+
+<body id="bodyPages">
+    <div id='games'>
+        <div id="gameover">
+            <h1 id="text">Your Point</h1>
+            <h1 id="yourPoint"></h1>
+            <h1 id="playAgain">Play Again</h1>
+        </div>
+        <canvas id="myCanvas" width="400" height="500" style="border:5px solid #000000;">
+        </canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
